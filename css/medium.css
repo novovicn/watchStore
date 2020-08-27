@@ -1,0 +1,215 @@
+#shopping-cart {
+  display: none;
+}
+rem
+#collection-text {
+		text-align: center;
+		padding: 3rem;
+		border-radius: .5rem;
+    left: 7%;
+    background-color: rgba(0,0,0,.5);
+    border-radius: .5rem;
+}
+
+#collection-text p {
+  text-align: justify;
+}
+
+.category-card {
+  height: 30rem;
+  width: 30rem;
+  background-color: red;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+
+#newest-products h1{
+    text-align: center;
+}
+
+.product-cards {
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  justify-items: center;
+  gap: 2rem;
+}
+
+.product-card {
+  padding: 1.5rem 1rem 0px 1rem;
+  background-color: white;
+  border: solid 1px black;
+  /* width: 370px; */
+  width: 45vw;
+  text-align: center;
+  border-radius: .3rem;
+  position: relative;
+}
+
+#brand-boxes {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+  gap: 20px;
+}
+
+#brand-boxes > article {
+  width: 30vw;
+  height: 14rem;
+  border-radius: .2rem;
+  border: 1px solid darkgray;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 17%;
+}
+
+footer h1{
+  text-align: center;
+  font-size: 3.2rem; 
+}
+
+#forms{
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas: 'f2'
+                       'f1';
+}
+
+#form1{
+  grid-area: f1;
+  text-align: center;
+}
+
+#form2{
+  grid-area: f2;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+#form2 textarea{
+  width: 485px;
+  margin-top: 3rem;
+
+}
+
+#form2 input[type=text]{
+  width: 35%;
+}
+
+
+
+@media only screen and (max-width: 720px) {
+  #contact .container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-areas:
+      "call call . login login"
+      "media media  . . .";
+    padding-top: 0.48rem;
+  }
+
+  #social-media {
+    grid-area: media;
+    width: 100%;
+    padding-top: .5rem ;
+  }
+  #call-us {
+    grid-area: call;
+   
+
+  }
+
+  #user-login {
+    grid-area: login;
+    display: flex;
+    justify-content: flex-end;
+    
+
+  }
+
+
+#main-nav ul{
+
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-areas: 'logo logo logo logo'
+                         'home men women contact';
+    
+
+}
+
+#main-nav li {
+    margin-bottom: 2rem;
+
+}
+
+#main-nav li:first-child{
+    grid-area: logo;
+    text-align: center;
+}
+
+#main-nav li:nth-child(2){
+    grid-area: home;
+}
+
+#main-nav li:nth-child(3){
+    grid-area: men;
+}
+
+#main-nav li:nth-child(4){
+    grid-area: women;
+}
+
+#main-nav li:nth-child(5){
+    grid-area: contact;
+
+}
+
+#collection-text{
+    /* position: absolute;
+    top: 10%;
+    left: 1%; */
+    height:40rem;
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* CATERORY */
+
+.category-card{
+    width: 70%;
+    height: 60vh;
+    background-size: cover;
+    margin-bottom: 3rem;
+    flex-direction: column;
+    justify-content: flex-end;
+    
+}
+
+.category-card p{
+    width: 100%;
+    grid-area: p;
+}
+
+.category-card a{
+    width: 100%;
+    grid-area: a;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
